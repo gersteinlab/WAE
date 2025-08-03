@@ -1,0 +1,653 @@
+Megasphaera sp. UPII 135-E
+Gluconacetobacter sp. SXCC-1
+Propionibacterium sp. CC003-HC2
+Pusillimonas sp. T7-7
+Bergeyella zoohelcum
+Capnocytophaga ochracea
+Xenococcus sp. PCC 7305
+Fusobacterium sp. OBRC1
+Human betaherpesvirus 5
+Human betaherpesvirus 7
+Human gammaherpesvirus 4
+Bordetella hinzii
+Clostridium sp. SY8519
+Erythrobacter longus
+Lymantria dispar multiple nucleopolyhedrovirus
+Acetobacteraceae bacterium AT-5844
+Pantoea rwandensis
+Staphylococcus sp. HGB0015
+Corynebacterium sp. HFH0082
+Human mastadenovirus B
+Methylobacterium sp. GXF4
+Burkholderia sp. YI23
+Lactobacillus jensenii
+Methylophilaceae bacterium 11
+Nocardioides sp. CF8
+Actinomyces sp. ICM39
+Clostridium sp. MSTE9
+Paenirhodobacter enshiensis
+Thermus sp. CCB_US3_UF1
+Peptoniphilus sp. BV3AC2
+Peptoniphilus sp. BV3C26
+Megasphaera sp. BV3C16-1
+pseudomallei group
+Elizabethkingia anophelis
+Treponema sp. JC4
+Human orthopneumovirus
+Influenza A virus
+Cellvibrio sp. BR
+Pontibacter sp. BAB1700
+Pseudomonas sp. GM16
+Pseudomonas sp. GM21
+Pseudomonas sp. GM55
+Pseudomonas sp. GM84
+Pantoea sp. YR343
+Brucella sp. 63/311
+Ruminococcus bicirculans
+Prevotella sp. ICM33
+Lachnospiraceae bacterium JC7
+Enterobacter sp. R4-368
+Equine infectious anemia virus
+Draconibacterium orientale
+gamma proteobacterium BDW918
+Citrobacter sp. KTE30
+Citrobacter sp. KTE151
+Citrobacter sp. KTE32
+Enterococcus sp. GMD1E
+Microbacterium sp. C448
+Pseudomonas sp. M47T1
+Enterococcus sp. C1
+Mycobacterium sp. 012931
+Atopobium sp. ICM42b
+Snodgrassella alvi
+Gilliamella apicola
+Pseudomonas sp. Ag1
+Bacteriovorax sp. Seq25_V
+Actinomyces sp. HPA0247
+Corynebacterium sp. KPL1814
+Corynebacterium sp. KPL1818
+Corynebacterium sp. KPL1824
+Corynebacterium sp. KPL1856
+Corynebacterium sp. KPL1859
+Dermabacter sp. HFH0086
+Propionibacterium sp. HGH0353
+Propionibacterium sp. KPL1844
+Propionibacterium sp. KPL1854
+Pseudomonas sp. HPB0071
+Veillonella sp. HPA0037
+Propionibacterium sp. KPL2003
+Propionibacterium sp. KPL2008
+Propionibacterium sp. KPL2009
+Pseudomonas sp. Lz4W
+SAR86 cluster bacterium SAR86E
+Acidocella sp. MX-AZ02
+Actinomyces sp. S4-C9
+Peptostreptococcus sp. MV1
+Mangrovibacter sp. MFB070
+Blautia sp. KLE 1732
+Prevotella sp. F0091
+Alkalibacterium sp. AK22
+Clostridiales bacterium S5-A14a
+Geobacillus sp. GHH01
+Lachnospiraceae bacterium M18-1
+Oscillibacter sp. 1-3
+Lachnospiraceae bacterium 10-1
+Gordonia sp. NB4-1Y
+Leptospira sp. B5-022
+Leuconostoc mesenteroides
+Microbacterium sp. UCD-TDU
+Cupriavidus sp. HMR-1
+Finegoldia magna
+Micrococcus luteus
+Dermacoccus nishinomiyaensis
+Staphylococcus aureus
+Staphylococcus epidermidis
+Staphylococcus haemolyticus
+Pseudomonas sp. FH1
+Actinomyces sp. S6-Spd3
+Prevotella sp. S7-1-8
+Staphylococcus simulans
+Prevotella sp. S7 MS 2
+Staphylococcus hominis
+Staphylococcus warneri
+Dietzia sp. UCD-THP
+Leucobacter sp. UCD-THU
+Human mastadenovirus C
+Clostridium sp. ASBs410
+Thermoanaerobaculum aquaticum
+Williamsia sp. D3
+Serratia sp. FS14
+Enterobacter sp. MGH 7
+Enterobacter sp. MGH 10
+Enterobacter sp. MGH 22
+Enterobacter sp. MGH 23
+Enterobacter sp. MGH 33
+Enterobacter sp. MGH 37
+Enterobacter sp. BIDMC 26
+Enterobacter sp. BIDMC 29
+Burkholderia sp. AU4i
+Olsenella uli
+Saccharibacter sp. AM169
+Microbacterium sp. TS-1
+Citrobacter freundii complex
+Actinoplanes sp. SE50/110
+Pandoravirus dulcis
+Selenomonas noxia
+Enterococcus faecalis
+Enterococcus faecium
+Enterococcus hirae
+Clostridium sp. BL8
+Hymenobacter sp. APR13
+Enterobacter sp. EGD-HP1
+Staphylococcus sp. EGD-HP3
+Lactococcus lactis
+Lactococcus lactis subsp. cremoris
+Lactococcus lactis subsp. lactis
+Lactococcus garvieae
+Pseudomonas aeruginosa group
+Pseudomonas fluorescens group
+Pseudomonas putida group
+Pseudomonas syringae group
+Firmicutes bacterium ASF500
+Gemella haemolysans
+Atopobium parvulum
+Pseudomonas sp. EGD-AK9
+Alcaligenes sp. EGD-AK7
+Bacillus sp. EGD-AK10
+Alicyclobacillus acidocaldarius subsp. acidocaldarius
+Staphylococcus sp. M0480
+Ochrobactrum sp. EGD-AQ16
+Bacillus anthracis
+Enterobacter sp. DC4
+Bacillus cereus
+Halomonas sp. PBN3
+Bacillus coagulans
+Exiguobacterium sp. MH3
+Bacillus megaterium
+Betaproteobacteria bacterium MOLA814
+Serratia sp. DD3
+Shinella sp. DD12
+Pseudomonas sp. TKP
+Defluviimonas sp. 20V17
+Bacillus subtilis
+Hydrogenophaga sp. T4
+Citrobacter sp. MGH 55
+Pseudomonas sp. BAY1663
+Microbacterium sp. MRS-1
+Bacillus azotoformans
+Streptomyces sp. PCS3-D2
+Delftia sp. RIT313
+Pseudomonas sp. RIT288
+Exiguobacterium sp. RIT341
+Pseudomonas sp. RIT357
+Staphylococcus sp. TE8
+Rhinovirus A
+Lactobacillus iners
+Microbacterium sp. CH12i
+Exiguobacterium sp. AB2
+Halomonas sp. SUBG004
+Corynebacterium sp. ATCC 6931
+Clostridium botulinum
+Clostridium butyricum
+alpha proteobacterium Q-1
+Gammaproteobacteria bacterium MFB021
+Georgenia sp. SUBG003
+Clostridium perfringens
+Halomonas sp. KO116
+Geobacillus thermoleovorans group
+Burkholderia sp. MSh2
+Clostridium tetani
+Porphyromonas sp. COT-108 OH2963
+Porphyromonas sp. COT-290 OH860
+Thermoanaerobacterium thermosaccharolyticum
+Clostridium beijerinckii
+Cellulosimicrobium sp. MM
+Streptomyces sp. JS01
+Rickettsiales bacterium Ac37b
+Cryobacterium sp. MLB-32
+Achromobacter sp. RTa
+Fusobacterium nucleatum subsp. vincentii
+Corynebacterium imitans
+Leifsonia xyli
+Lactobacillus acidophilus
+Treponema denticola
+Lactobacillus brevis
+Lactobacillus casei
+Lactobacillus delbrueckii
+Lactobacillus delbrueckii subsp. bulgaricus
+Lactobacillus helveticus
+Yokenella regensburgei
+Lactobacillus plantarum
+Lactobacillus gasseri
+Lactobacillus paracasei
+Lactobacillus reuteri
+Lactobacillus sakei
+Corynebacterium casei
+Lactobacillus fermentum
+Bacillus sp. SG-1
+Corynebacterium camporealensis
+Lactobacillus ruminis
+Lactobacillus salivarius
+Lactobacillus oris
+Listeria monocytogenes
+Mycobacterium sp. JLS
+Erysipelothrix rhusiopathiae
+Yersinia pseudotuberculosis complex
+Trueperella pyogenes
+Roseburia intestinalis
+Bifidobacterium longum subsp. longum
+Bifidobacterium adolescentis
+Bifidobacterium bifidum
+Bifidobacterium angulatum
+Bifidobacterium breve
+Bifidobacterium dentium
+Bifidobacterium pseudolongum
+Corynebacterium diphtheriae
+Corynebacterium glutamicum
+Rothia aeria
+Elizabethkingia miricola
+Propionibacterium freudenreichii
+Mycobacterium kansasii
+Mycobacterium leprae
+Mycobacterium tuberculosis
+Facklamia hominis
+Mycobacterium xenopi
+Alicycliphilus denitrificans
+Delftia tsuruhatensis
+Enterobacter hormaechei subsp. hoffmannii
+Saccharopolyspora erythraea
+Dermacoccus sp. Ellin185
+Streptomyces fradiae
+Corynebacterium atypicum
+Campylobacter coli
+Haematobacter massiliensis
+Campylobacter fetus
+Nocardioides sp. JS614
+Campylobacter jejuni
+Anoxybacillus gonensis
+Campylobacter concisus
+Tropheryma whipplei
+Campylobacter showae
+Rothia dentocariosa
+Mobiluncus curtisii
+Mobiluncus mulieris
+Gordonia terrae
+Bermanella marisrubri
+Escherichia albertii
+Mycoplasma hominis
+Mycoplasma hyorhinis
+Mycoplasma pneumoniae
+Erwinia sp. Ejp617
+Pseudomonas rhizosphaerae
+Bifidobacterium longum
+Treponema putidum
+Pyrococcus furiosus
+Prevotella salivae
+Varroa destructor virus 1
+Brucella abortus
+Xylella fastidiosa
+Erythrobacter sp. NAP1
+Elizabethkingia meningoseptica
+Burkholderia sp. Ch1-1
+Pseudomonas lutea
+Klebsiella variicola
+butyrate-producing bacterium SS3/4
+Staphylococcus equorum
+Bifidobacterium thermacidophilum
+Bacteroides cellulosilyticus
+delta proteobacterium MLMS-1
+Chelativorans sp. BNC1
+Gardnerella vaginalis
+Thermus thermophilus
+Bifidobacterium animalis
+Staphylococcus lugdunensis
+Nostoc sp. PCC 7524
+Neisseria weaveri
+Bacteroides eggerthii
+Bacteroides ovatus
+Porphyromonas asaccharolytica
+Prevotella bivia
+Prevotella buccae
+Prevotella buccalis
+Prevotella denticola
+Prevotella disiens
+Prevotella melaninogenica
+Prevotella nigrescens
+Prevotella oralis
+Prevotella oris
+Cronobacter sakazakii
+Geobacter metallireducens
+Cobetia marina
+Staphylococcus pseudintermedius
+Clavibacter michiganensis
+Burkholderia pseudomallei
+Comamonas testosteroni
+Pseudomonas aeruginosa
+Salmonella enterica
+Ruegeria sp. TM1040
+Turnip vein-clearing virus
+Staphylococcus capitis
+Lactobacillus delbrueckii subsp. lactis
+Pseudomonas fluorescens
+Veillonella parvula
+Leptospira kirschneri
+Rhodothermus marinus
+Taylorella equigenitalis
+Desulfovibrio sp. A2
+Pseudomonas mendocina
+Pseudomonas putida
+Autographa californica multiple nucleopolyhedrovirus
+Dialister micraerophilus
+Bacteroides pyogenes
+Bacillus sp. NRRL B-14911
+Oceanicaulis sp. HTCC2633
+Enterobacter sp. DC1
+beta proteobacterium KB13
+Pseudomonas stutzeri
+Pseudomonas syringae
+Clostridium sulfidigenes
+Clavibacter michiganensis subsp. sepedonicus
+Lily mottle virus
+Anaerococcus hydrogenalis
+Anaerococcus lactolyticus
+Anaerococcus prevotii
+alpha proteobacterium BAL199
+Shewanella xiamenensis
+Gordonia sp. KTR9
+Bacteroides finegoldii
+Anoxybacillus flavithermus
+Lactobacillus johnsonii
+Leuconostoc citreum
+Leuconostoc mesenteroides subsp. cremoris
+Leuconostoc pseudomesenteroides
+Melissococcus plutonius
+Exiguobacterium mexicanum
+Riemerella anatipestifer
+Burkholderia oklahomensis
+Kutzneria sp. 744
+Micavibrio aeruginosavorus
+Roseobacter sp. AzwK-3b
+Azotobacter vinelandii
+Enterobacter cloacae complex
+Geobacter sulfurreducens
+Bacillus thermoamylovorans
+Streptomyces olindensis
+Ochrobactrum sp. CDB2
+Exiguobacterium sp. AT1b
+Granulibacter bethesdensis
+Haematobacter missouriensis
+Nocardia brasiliensis
+Bartonella tamiae
+Enterococcus casseliflavus
+Pseudomonas protegens
+Sinorhizobium meliloti
+Corynebacterium accolens
+Corynebacterium jeikeium
+Erythrobacter sp. JL475
+Cycloclasticus sp. P1
+Prevotella timonensis
+Vibrionales bacterium SWAT-3
+Flavobacteria bacterium BAL38
+Dorea formicigenerans
+Lachnospiraceae bacterium 28-4
+Lachnospiraceae bacterium 3-1
+Lachnospiraceae bacterium A2
+Lachnospiraceae bacterium A4
+Veillonella atypica
+Corynebacterium glucuronolyticum
+Enterobacter sp. 638
+Corynebacterium ureicelerivorans
+Sutterella wadsworthensis
+Burkholderia sp. SJ98
+Nocardioidaceae bacterium Broad-1
+Saccharomonospora azurea
+Clostridium sp. M62/1
+Cronobacter dublinensis
+Actinopolyspora erythraea
+Prevotella amnii
+Glypta fumiferanae ichnovirus
+Porphyromonas catoniae
+Beggiatoa sp. PS
+Methylobacterium sp. 4-46
+Rothia mucilaginosa
+Corynebacterium matruchotii
+Corynebacterium urealyticum
+Pseudomonas sp. Chol1
+Pasteurella multocida subsp. multocida
+Legionella pneumophila
+Leptospira licerasiae
+Legionella longbeachae
+Propionibacterium sp. 5_U_42AFAA
+Veillonella sp. 6_1_27
+Bacteroides sp. 1_1_30
+Bacteroides sp. 3_1_33FAA
+Bacteroides sp. 4_1_36
+Clostridium sp. 7_2_43FAA
+Ruminococcus sp. 5_1_39BFAA
+Veillonella sp. 3_1_44
+Clostridiales bacterium 1_7_47FAA
+Erysipelotrichaceae bacterium 2_2_44A
+Staphylococcus aureus subsp. aureus
+Parabacteroides merdae
+Bacteroides stercoris
+Bacteroides sp. 1_1_14
+Parabacteroides sp. 20_3
+Bacteroides sp. 3_1_40A
+Burkholderiales bacterium 1_1_47
+Geobacillus sp. WCH70
+Bacteroides caccae
+Lactobacillus paracasei subsp. paracasei
+Lactobacillus rhamnosus
+Bibersteinia trehalosi
+Lactobacillus crispatus
+Mycobacterium triplex
+Moraxella catarrhalis
+Burkholderia lata
+Neisseria flavescens
+Neisseria gonorrhoeae
+Neisseria lactamica
+Neisseria meningitidis
+Neisseria mucosa
+Neisseria sicca
+Thauera sp. 63
+Eggerthella sp. YY7918
+Kingella kingae
+Rheinheimera sp. A13L
+Alcaligenes faecalis
+Burkholderia sp. H160
+Pantoea sp. aB
+Bordetella bronchiseptica
+Ectothiorhodospira sp. PHS-1
+Brucella sp. NVSL 07-0026
+Flavobacteriaceae bacterium 3519-10
+Enterococcus mundtii
+Hyphomicrobium denitrificans
+Sulfobacillus acidophilus
+Eikenella corrodens
+Raoultella ornithinolytica
+beta proteobacterium CB
+Citrobacter freundii
+Mycobacterium vulneris
+Salmonella bongori
+Enterobacter cloacae
+Erwinia amylovora
+Pantoea ananatis
+Actinomyces graevenitzii
+Clostridium sp. D5
+Escherichia coli
+Prevotella sp. C561
+Parabacteroides sp. D13
+Escherichia fergusonii
+gamma proteobacterium NOR5-3
+Thermus sp. NMX2.A1
+Klebsiella oxytoca
+Klebsiella pneumoniae
+Bacillus gaemokensis
+Bacillus manliponensis
+Klebsiella sp.
+Pseudomonas stutzeri subgroup
+Burkholderia thailandensis
+Geobacillus sp. Y4.1MC1
+Morganella morganii
+Proteus mirabilis
+Bacteroides sp. D20
+Terribacillus aidingensis
+Pseudomonas chlororaphis
+Providencia stuartii
+Streptomyces sp. AA4
+Southern tomato virus
+Rickettsiella grylli
+Salmonella enterica subsp. enterica
+Pantoea sp. At-9b
+Serratia liquefaciens
+Serratia marcescens
+Enterobacter asburiae
+Shigella boydii
+Shigella dysenteriae
+Shigella flexneri
+Shewanella baltica
+Shigella sonnei
+Yersinia pestis
+Pseudomonas sp. 1-7
+Lactobacillus florum
+Burkholderia sp. CCGE1001
+Burkholderia sp. CCGE1003
+Clostridium sp. DL-VIII
+Aeromonas salmonicida
+Aeromonas caviae
+Clostridium sp. ATCC BAA-442
+Actinoplanes sp. N902-109
+Corynebacterium ulcerans
+Fretibacterium fastidiosum
+Nesterenkonia sp. AN1
+Oribacterium sp. oral taxon 078
+Bacillus subtilis group
+Pseudomonas bauzanensis
+Lactobacillus casei group
+Ruminococcus sp. SR1/5
+Lachnospiraceae bacterium 2_1_58FAA
+Lachnospiraceae bacterium 5_1_57FAA
+Lachnospiraceae bacterium 3_1_57FAA_CT1
+Lachnospiraceae bacterium 7_1_58FAA
+Pseudomonas sp. H2
+Lachnospiraceae bacterium 1_4_56FAA
+Pantoea stewartii
+Pantoea stewartii subsp. indologenes
+Campylobacter sp. 10_1_50
+Clostridium sp. 7_3_54FAA
+Neisseria sp. GT4A_CT1
+Subdoligranulum sp. 4_3_54A2FAA
+Bacillus sp. 2_A_57_CT2
+Bacillus sp. 1NLA3E
+Frankia sp. BMG5.23
+Streptomyces albulus
+Pseudomonas sp. VLB120
+Enterobacteriaceae bacterium strain FGI 57
+Bilophila sp. 4_1_30
+Betacoronavirus 1
+Severe acute respiratory syndrome-related coronavirus
+Treponema vincentii
+Frankia sp. QA3
+Tannerella sp. oral taxon HOT-286
+Aggregatibacter actinomycetemcomitans
+Actinobacillus pleuropneumoniae
+Actinobacillus suis
+Klebsiella pneumoniae subsp. pneumoniae
+Achromobacter piechaudii
+Haemophilus haemolyticus
+Haemophilus influenzae
+Haemophilus parainfluenzae
+Aggregatibacter aphrophilus
+Delftia sp. Cs1-4
+Collinsella sp. 4_8_47FAA
+Lachnospiraceae bacterium 2_1_46FAA
+Sphingobacterium sp. 21
+Ahrensia sp. R2A130
+Roseibium sp. TrichSKD4
+gamma proteobacterium HIMB55
+Pasteurella multocida
+Coprococcus sp. ART55/1
+Methylophaga nitratireducenticrescens
+Clostridium sp. BNL1100
+Mannheimia haemolytica
+Bifidobacterium stellenboschense
+Myroides odoratimimus
+Fusobacterium nucleatum subsp. nucleatum
+Fusobacterium nucleatum subsp. animalis
+Helicobacter typhlonius
+Anaplasma marginale
+Mycobacterium tuberculosis complex
+Mycobacterium canettii
+Orientia tsutsugamushi
+Opitutaceae bacterium TAV5
+Hydrogenophaga sp. PBC
+Delftia acidovorans
+Hylemonella gracilis
+Bacteroides fragilis
+Bacteroides thetaiotaomicron
+Bacteroides uniformis
+Bacteroides vulgatus
+Atopobium vaginae
+Parabacteroides distasonis
+Serratia grimesii
+gamma proteobacterium HdN1
+Chlamydia psittaci
+Porphyromonas gingivalis
+Gordonia alkanivorans
+Eggerthella lenta
+Oxalobacter formigenes
+Fusobacterium nucleatum
+Faecalibacterium prausnitzii
+Exiguobacterium sp. S17
+Fusobacterium periodonticum
+Burkholderiales bacterium JOSHI_001
+Microvirga lotononidis
+Oscillatoriales cyanobacterium JSC-12
+Bacillus cereus group
+Burkholderia cepacia complex
+Burkholderia multivorans
+delta proteobacterium NaphS2
+Methylovorus sp. MP688
+Plautia stali symbiont
+Megasphaera elsdenii
+SAR116 cluster alpha proteobacterium HIMB100
+Turicibacter sp. HGF1
+Pseudomonas sp. CF150
+Pseudomonas sp. CF161
+Pseudomonas sp. CFII64
+actinobacterium SCGC AAA027-L06
+Ketogulonicigenium vulgare
+Pseudomonas brassicacearum
+Serratia sp. M24T3
+Propionibacterium sp. 434-HC2
+Capnocytophaga sp. CM59
+Mogibacterium sp. CM50
+Selenomonas sp. CM52
+Actinomyces sp. ICM47
+Actinomyces sp. ICM54
+Atopobium sp. BS2
+Fusobacterium sp. CM21
+Fusobacterium sp. CM22
+Selenomonas sp. FOBRC6
+Shuttleworthia sp. MSX8B
+Veillonella sp. ACP1
+Veillonella sp. AS16
+Veillonella sp. ICM51a
+Lachnoanaerobaculum sp. ICM7
+Lachnoanaerobaculum sp. OBRC5-5
+Lachnoanaerobaculum sp. MSX33
+Oxalobacteraceae bacterium IMCC9480
+Arcobacter sp. L
+Ehrlichia chaffeensis
+Bordetella petrii
+Ochrobactrum intermedium
+Burkholderia cenocepacia
+Pseudomonas sp. M1
+Bacillus subtilis subsp. spizizenii
+Clostridium sp. ASF356
+Lactobacillus mucosae
+Leuconostoc sp. C2
+Pseudomonas sp. TJI-51
+Burkholderia sp. TJI49
+Desmospora sp. 8437
+Porphyromonas sp. KLE 1280

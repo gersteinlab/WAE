@@ -1,0 +1,14 @@
+19	BALF	CAP
+18	BALF	Healthy
+19	BALF	SARS-CoV-2
+2	Bowel	SARS-CoV-2
+5	Heart	SARS-CoV-2
+1	Jejunum	SARS-CoV-2
+1	Kidney	SARS-CoV-2
+5	Liver	SARS-CoV-2
+3	Lung	Healthy
+20	Lung	SARS-CoV-2
+1	Marrow	SARS-CoV-2
+3	PBMC	Healthy
+3	PBMC	SARS-CoV-2
+5	Placenta	SARS-CoV-2
