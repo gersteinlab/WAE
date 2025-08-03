@@ -1,0 +1,166 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :   utils.py
+@Time    :   2020/10/05 13:46:04
+@Author  :   Leilan Zhang
+@Version :   1.0
+@Contact :   zhangleilan@gmail.com
+@Desc    :   None
+'''
+
+
+import os
+import gensim
+import numpy as np
+import pandas as pd
+from gensim.models.coherencemodel import CoherenceModel
+import sys
+
+
+def calc_topic_uniqueness(words_df, l=-1, topic_num=-1):
+    '''
+    - Implemented as detailed in "Topic Modeling with Wasserstein Autoencoders"
+    - score ranges from 1/K to 1, higher means more uniqueness in each topic
+    - by default returns average uniqueness across all topics
+    '''
+
+    if l==-1:
+        l = words_df.shape[1]
+    elif l > words_df.shape[1]:
+        sys.exit(f'error, number of top words requested to use ({l}) greater than number provided in topic words dataframe ({words_df.shape[1]})')
+    k = words_df.shape[0]
+
+    rel_df = words_df.iloc[:, :l]
+    
+    word_freq_dict = rel_df.apply(pd.Series.value_counts, axis=1).sum(axis=0).to_dict()
+    
+    if topic_num != -1:
+        return sum([1/word_freq_dict[word] for word in rel_df.iloc[topic_num, :]])/l
+        
+    else:
+        tu_sum = 0
+        for _, row in rel_df.iterrows():
+            tu_sum += sum([1/word_freq_dict[word] for word in row])/l
+        return tu_sum/k
+
+    
+
+def get_topic_words(model,topn=15,n_topic=10,vocab=None,fix_topic=None,showWght=False):
+    topics = []
+    def show_one_tp(tp_idx):
+        if showWght:
+            return [(vocab.id2token[t[0]],t[1]) for t in model.get_topic_terms(tp_idx,topn=topn)]
+        else:
+            return [vocab.id2token[t[0]] for t in model.get_topic_terms(tp_idx,topn=topn)]
+    if fix_topic is None:
+        for i in range(n_topic):
+            topics.append(show_one_tp(i))
+    else:
+        topics.append(show_one_tp(fix_topic))
+    return topics
+
+def calc_topic_diversity(topic_words):
+    '''topic_words is in the form of [[w11,w12,...],[w21,w22,...]]'''
+    vocab = set(sum(topic_words,[]))
+    n_total = len(topic_words) * len(topic_words[0])
+    topic_div = len(vocab) / n_total
+    return topic_div
+
+def calc_topic_coherence(topic_words,docs,dictionary,emb_path=None,taskname=None,sents4emb=None,calc4each=False):
+    # emb_path: path of the pretrained word2vec weights, in text format.
+    # sents4emb: list/generator of tokenized sentences.
+    # Computing the C_V score
+    cv_coherence_model = CoherenceModel(topics=topic_words,texts=docs,dictionary=dictionary,coherence='c_v')
+    cv_per_topic = cv_coherence_model.get_coherence_per_topic() if calc4each else None
+    cv_score = cv_coherence_model.get_coherence()
+    
+    # Computing the C_W2V score
+    try:
+
+        print('Training a word2vec model 20 epochs to evaluate topic coherence, this may take a few minutes ...')
+        w2v_model = gensim.models.Word2Vec(sents4emb,min_count=1,workers=6,epochs=20) # apparently size=300 not used
+        keyed_vectors = w2v_model.wv
+
+        raise Exception("C_w2v score isn't available for the missing of training corpus (sents4emb=None).")
+            
+        w2v_coherence_model = CoherenceModel(topics=topic_words,texts=docs,dictionary=dictionary,coherence='c_w2v',keyed_vectors=keyed_vectors)
+
+        w2v_per_topic = w2v_coherence_model.get_coherence_per_topic() if calc4each else None
+        w2v_score = w2v_coherence_model.get_coherence()
+    except Exception as e:
+        print(e)
+        #In case of OOV Error
+        w2v_per_topic = [None for _ in range(len(topic_words))]
+        w2v_score = None
+    
+    # Computing the C_UCI score
+    c_uci_coherence_model = CoherenceModel(topics=topic_words,texts=docs,dictionary=dictionary,coherence='c_uci')
+    c_uci_per_topic = c_uci_coherence_model.get_coherence_per_topic() if calc4each else None
+    c_uci_score = c_uci_coherence_model.get_coherence()
+    
+    
+    # Computing the C_NPMI score
+    c_npmi_coherence_model = CoherenceModel(topics=topic_words,texts=docs,dictionary=dictionary,coherence='c_npmi')
+    c_npmi_per_topic = c_npmi_coherence_model.get_coherence_per_topic() if calc4each else None
+    c_npmi_score = c_npmi_coherence_model.get_coherence()
+    return (cv_score,w2v_score,c_uci_score, c_npmi_score),(cv_per_topic,w2v_per_topic,c_uci_per_topic,c_npmi_per_topic)
+
+def mimno_topic_coherence(topic_words,docs):
+    tword_set = set([w for wlst in topic_words for w in wlst])
+    word2docs = {w:set([]) for w in tword_set}
+    for docid,doc in enumerate(docs):
+        doc = set(doc)
+        for word in tword_set:
+            if word in doc:
+                word2docs[word].add(docid)
+    def co_occur(w1,w2):
+        return len(word2docs[w1].intersection(word2docs[w2]))+1
+    scores = []
+    for wlst in topic_words:
+        s = 0
+        for i in range(1,len(wlst)):
+            for j in range(0,i):
+                s += np.log((co_occur(wlst[i],wlst[j])+1.0)/len(word2docs[wlst[j]]))
+        scores.append(s)
+    return np.mean(s)
+
+def evaluate_topic_quality(topic_words, test_data, taskname=None, calc4each=False):
+    
+    td_score = calc_topic_diversity(topic_words)
+    print(f'topic diversity:{td_score}')
+    
+    (c_v, # coherence according to gensim.models.coherencemodel 
+     c_w2v, # coherence score of a word2vec
+     c_uci, # coherence score of a 
+     c_npmi),\
+        (cv_per_topic,
+         c_w2v_per_topic,
+         c_uci_per_topic,
+         c_npmi_per_topic) = \
+        calc_topic_coherence(topic_words=topic_words, docs=test_data.docs, dictionary=test_data.dictionary,
+                             emb_path=None, taskname=taskname, sents4emb=test_data, calc4each=calc4each)
+    # print(f'c_v:{c_v}, c_w2v:{c_w2v}, c_uci:{c_uci}, c_npmi:{c_npmi}')
+    scrs = {'c_v':cv_per_topic,'c_w2v':c_w2v_per_topic,'c_uci':c_uci_per_topic,'c_npmi':c_npmi_per_topic}
+    if calc4each:
+        for scr_name,scr_per_topic in scrs.items():
+            print(f'{scr_name}:')
+            for t_idx, (score, twords) in enumerate(zip(scr_per_topic, topic_words)):
+                print(f'topic.{t_idx+1:>03d}: {score} {twords}')
+    
+    mimno_tc = mimno_topic_coherence(topic_words, test_data.docs)
+    print('mimno topic coherence:{}'.format(mimno_tc))
+    if calc4each:
+        return (c_v, c_w2v, c_uci, c_npmi, mimno_tc, td_score), (cv_per_topic, c_w2v_per_topic, c_uci_per_topic, c_npmi_per_topic)
+    else:
+        return c_v, c_w2v, c_uci, c_npmi, mimno_tc, td_score
+
+def smooth_curve(points, factor=0.9):
+    smoothed_points = []
+    for pt in points:
+        if smoothed_points:
+            prev = smoothed_points[-1]
+            smoothed_points.append(prev*factor+pt*(1-factor))
+        else:
+            smoothed_points.append(pt)
+    return smoothed_points
