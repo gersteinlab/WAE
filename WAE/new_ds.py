@@ -99,6 +99,7 @@ class mm_Dataset(Dataset):
             self.expbool = {}
             for name, fname in zip(mode_names, expmat_fnames):
                 self.expmats[name] = pd.read_csv(os.path.join(data_dir, fname), index_col=0)
+                print(os.path.join(data_dir, fname))
                 colnames = self.expmats[name].columns
                 self.expmats[name] = self.expmats[name].loc[:, (~colnames.str.startswith('MT-')) & (~colnames.isin(stopwords)) & (self.expmats[name].sum(axis=0)!=0)] # remove MT, stopwords, and expressionless columns
 
@@ -107,7 +108,8 @@ class mm_Dataset(Dataset):
                 if log:
                     self.expmats[name] = np.log(self.expmats[name] + 1e-5)
                     self.expmats[name] = self.expmats[name] + abs(min(self.expmats[name].min().min(), 0)) # ensure no negative values 
-
+            #print(mode_names)
+            #print(self.expmats)
             self.label_type = np.concatenate([np.repeat(mode_names,[self.expmats[name].shape[1] for name in mode_names])])
             
             # Build dictionary
@@ -119,11 +121,17 @@ class mm_Dataset(Dataset):
             
             # scaling expression frequencies
             if scale is not None: # scale
-                depths = self.expmats[scale].sum(axis=1) # scale = gene expression
-                self.scales = depths.max()/depths
+                    
+                if scale in self.expmats:
+                    depths = self.expmats[scale].sum(axis=1)
+                    # Avoid division by zero if a sample has 0 total counts
+                    self.scales = depths.max() / depths.replace(0, 1) 
 
-                for type, exp_df in self.expmats.items():
-                    self.expmats[type] = exp_df.mul(self.scales, axis=0)
+                    for m_name in self.expmats.keys():
+                        self.expmats[m_name] = self.expmats[m_name].mul(self.scales, axis=0)
+                else:
+                    print(f"Warning: Scaling modality '{scale}' not found.")
+                    self.scales = 1
             
             else:
                 self.scales = 1
@@ -132,6 +140,7 @@ class mm_Dataset(Dataset):
             if do_normalize:
                 for type, exp_df in self.expmats.items():
                     self.expmats[type] = (exp_df - exp_df.min().min())/(exp_df.max().max() - exp_df.min().min())
+            
 
             # min-max normalization per sample (was wtih old code, currently broken!)
             # for doc, (_, genes), (_, microbes), (_, premirs) in zip(self.docs,

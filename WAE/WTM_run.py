@@ -22,6 +22,7 @@ from WTM_model import WTM
 from utils import *
 from new_ds import mm_Dataset
 from multiprocessing import cpu_count
+import matplotlib.pyplot as plt
 
 def list_of_strings(arg):
     return arg.split(',')
@@ -57,7 +58,11 @@ parser.add_argument('--criterion',type=str,default='cross_entropy',help='The cri
 parser.add_argument('--ckpt',type=str,default=None,help='Checkpoint path') # no checkpoint to start training from yet
 parser.add_argument('--learning_rate', type=float, default=1e-3, help='Training Learning Rate')
 parser.add_argument('--dir_alpha', type=float, default=1e-4, help='If Dirichlet prior, alpha parameter')
-parser.add_argument('--log_every', type=int, default=25, help='How often to save and output train details')
+parser.add_argument('--log_every', type=int, default=1, help='How often to save and output train details')
+
+##PN 
+parser.add_argument('--beta', type=float, default=1.0, help='parameter of NMM')
+
 
 args = parser.parse_args()
 
@@ -86,6 +91,7 @@ def main():
     log_every = args.log_every
     log_transform = args.log_transform
     do_normalize = args.norm
+    beta = args.beta
 
     
 
@@ -111,14 +117,14 @@ def main():
         param=checkpoint["param"]
         param.update({"device": device})
         model = WTM(**param)
-        model.train(train_data=docSet,batch_size=batch_size,dir_alpha=dir_alpha,
+        trainloss_lst = model.train(train_data=docSet,batch_size=batch_size,dir_alpha=dir_alpha,
                     learning_rate=learning_rate,test_data=None,num_epochs=num_epochs,
-                    log_every=log_every,beta=1.0,ckpt=checkpoint)
+                    log_every=log_every,beta=beta,ckpt=checkpoint)
     else:
         model = WTM(bow_dim=voc_size,n_topic=n_topic,device=device,dist=dist,taskname=task_name,dropout=0.4)
-        model.train(train_data=docSet,batch_size=batch_size,dir_alpha=dir_alpha,
+        trainloss_lst = model.train(train_data=docSet,batch_size=batch_size,dir_alpha=dir_alpha,
                     learning_rate=learning_rate,test_data=None,num_epochs=num_epochs,
-                    log_every=log_every,beta=1.0)
+                    log_every=log_every,beta=beta) # changed beta=1.0 to beta=beta PN
 
     # get coherence evaluation metrics
     # (c_v, c_w2v, c_uci, c_npmi, mimno_tc, td_score),\
@@ -129,6 +135,13 @@ def main():
     # with open(os.path.join(data_dir, labels_fname), 'r') as file:
     #     labels_list = [line.strip() for line in file.readlines()]
     #     pickle.dump({'txts':labels_list,'embeds':embeds},open('wtm_data/wtm_embeds.pkl','wb'))
+    smth_pts = smooth_curve(trainloss_lst)
+
+    plt.plot(np.array(range(len(smth_pts)))*log_every, smth_pts)
+    #plt.plot(np.array(range(len(trainloss_lst))) * log_every, trainloss_lst) #PN
+    plt.xlabel('epochs')
+    plt.title('Train Loss')
+    plt.savefig(f"{data_dir}/wlda_trainloss_{num_epochs}_beta_{beta}.png")
 
     
 if __name__ == "__main__":

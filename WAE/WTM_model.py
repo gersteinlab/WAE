@@ -40,7 +40,7 @@ class WTM:
         if device != None:
             self.wae = self.wae.to(device)
 
-    def train(self, train_data, batch_size=256, dir_alpha=0.001, learning_rate=0.001, test_data=None, num_epochs=100, is_evaluate=False, log_every=10, beta=1.0, ckpt=None):
+    def train(self, train_data, batch_size=256, dir_alpha=0.001, learning_rate=0.001, test_data=None, num_epochs=100, is_evaluate=False, log_every=1, beta=1.0, ckpt=None):
 
         self.wae.train()
         self.id2token = {v: k for k,v in train_data.dictionary.token2id.items()}
@@ -56,7 +56,7 @@ class WTM:
         else:
             start_epoch = 0
 
-        ckpt_folder = os.path.join('WTM_checkpoints', f'{self.taskname}_tp{self.n_topic}_a{dir_alpha}_lr{learning_rate}_log_nonorm')
+        ckpt_folder = os.path.join('WTM_checkpoints', f'{self.taskname}_tp{self.n_topic}_a{dir_alpha}_lr{learning_rate}_bt{beta}_ep{num_epochs}_log_nonorm')
         if not os.path.exists(ckpt_folder):
             os.makedirs(ckpt_folder)
 
@@ -111,21 +111,24 @@ class WTM:
                         "dropout": self.dropout
                     }
                 }
-                # torch.save(checkpoint,save_name)
+                torch.save(checkpoint,save_name)
                 print(f'alpha: {dir_alpha}\tlr: {learning_rate}')
                 print(f'Epoch {(epoch+1):>3d}\tLoss:{sum(epochloss_lst)/len(epochloss_lst):<.7f}')
                 # print('\n'.join([str(lst) for lst in self.show_topic_words()]))
                 print('='*30)
                 smth_pts = smooth_curve(trainloss_lst)
-                plt.plot(np.array(range(len(smth_pts)))*log_every, smth_pts)
-                plt.xlabel('epochs')
-                plt.title('Train Loss')
-                plt.savefig('wtm_data/wlda_trainloss.png')
+                
+                #plt.plot(np.array(range(len(smth_pts)))*log_every, smth_pts)
+                #plt.plot(np.array(range(len(trainloss_lst))) * log_every, trainloss_lst) #PN
+                #plt.xlabel('epochs')
+                #plt.title('Train Loss')
+                #plt.savefig(f"wtm_data/wlda_trainloss_beta_{beta}.png")
                 # if test_data!=None:
                 #     c_v,c_w2v,c_uci,c_npmi,mimno_tc, td = self.evaluate(test_data,calc4each=False)
                 #     c_v_lst.append(c_v), c_w2v_lst.append(c_w2v), c_uci_lst.append(c_uci),c_npmi_lst.append(c_npmi), mimno_tc_lst.append(mimno_tc), td_lst.append(td)
                     
         scrs = {'c_v':c_v_lst,'c_w2v':c_w2v_lst,'c_uci':c_uci_lst,'c_npmi':c_npmi_lst,'mimno_tc':mimno_tc_lst,'td':td_lst}
+        return trainloss_lst
         '''
         for scr_name,scr_lst in scrs.items():
             plt.cla()
